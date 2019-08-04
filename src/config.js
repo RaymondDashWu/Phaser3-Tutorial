@@ -1,21 +1,21 @@
-import GameScene from './GameScene';
 import { AUTO } from 'phaser';
-import PreloadScene from './PreloadScene'
+import GameScene from './GameScene';
+import PreloadScene from './PreloadScene';
 
 
 const config = {
-    type: AUTO,
-    parent: 'phaser-example',
-    width: 800,
-    height: 600,
-    physics: {
-        default: 'arcade',
-        arcade: {
-            gravity: { y: 300 },
-            debug: true,
-        }
+  type: AUTO,
+  parent: 'phaser-example',
+  width: 800,
+  height: 600,
+  physics: {
+    default: 'arcade',
+    arcade: {
+      gravity: { y: 300 },
+      debug: true,
     },
-    scene: [PreloadScene, GameScene],
+  },
+  scene: [PreloadScene, GameScene],
 };
 
-export { config };
+export default config;
